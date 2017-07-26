@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {FormsModule} from "@angular/forms";
 import { NgModule } from '@angular/core';
+import {HttpModule} from "@angular/http"
+import {FwModule} from "../fw/fw.module"
 
 import { AppComponent } from './app.component';
 
@@ -8,7 +11,10 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    FwModule
   ],
   providers: [],
   bootstrap: [AppComponent]
