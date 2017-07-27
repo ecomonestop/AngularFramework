@@ -5,6 +5,7 @@ import {HttpModule} from "@angular/http"
 import {FwModule} from "../fw/fw.module"
 
 import { AppComponent } from './app.component';
+import { FrameworkConfigService } from "../fw/services/framework-config.service";
 
 @NgModule({
   declarations: [

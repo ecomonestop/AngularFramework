@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FrameworkBodyComponent } from "../fw/framework-body/framework-body.component";
+import {ContentComponent} from "../fw/content/content.component"
+import{TitleBarComponent} from "../fw/title-bar/title-bar.component"
+import { FrameworkConfigService } from "./services/framework-config.service";
+import { TopBarComponent } from "./top-bar/top-bar.component"
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [FrameworkBodyComponent],
+  declarations: [FrameworkBodyComponent, ContentComponent, TitleBarComponent, TopBarComponent],
+  providers: [FrameworkConfigService],
   exports: [FrameworkBodyComponent]
 })
 export class FwModule { }

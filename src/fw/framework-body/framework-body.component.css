@@ -1,0 +1,11 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    /*properties to take full screen*/
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+     /*end of properties to take full screen*/
+}
