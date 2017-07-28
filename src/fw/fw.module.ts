@@ -13,13 +13,15 @@ import { MenuService } from "./services/menu.service";
 import { MenuComponent } from "./menus/menu/menu.component";
 import { MenuItemComponent } from "./menus/menu-item/menu-item.component";
 import { RouterModule } from "@angular/router";
+import { PopupMenuComponent } from "./menus/popup-menu/popup-menu.component";
+
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule
   ],
-  declarations: [FrameworkBodyComponent, ContentComponent, TitleBarComponent, TopBarComponent, StatusBarComponent, ScreenLarge, ScreenBelowLarge, MenuComponent, MenuItemComponent],
+  declarations: [FrameworkBodyComponent, ContentComponent, TitleBarComponent, TopBarComponent, StatusBarComponent, ScreenLarge, ScreenBelowLarge, MenuComponent, MenuItemComponent, PopupMenuComponent],
   providers: [FrameworkConfigService, ScreenService, MenuService],
   exports: [FrameworkBodyComponent]
 })
