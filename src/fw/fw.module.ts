@@ -19,6 +19,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RegisterUserComponent } from "./users/register-user/register-user.component";
 import { DynamicFormComponent } from "./dynamic-forms/dynamic-form/dynamic-form.component";
 import { DynamicFieldComponent } from "./dynamic-forms/dynamic-field/dynamic-field.component";
+import { PanelComponent } from "./panels/panel/panel.component";
 
 
 @NgModule({
@@ -30,8 +31,9 @@ import { DynamicFieldComponent } from "./dynamic-forms/dynamic-field/dynamic-fie
   ],
   declarations: [FrameworkBodyComponent, ContentComponent, TitleBarComponent, TopBarComponent, 
     StatusBarComponent, ScreenLarge, ScreenBelowLarge, MenuComponent, MenuItemComponent, 
-    PopupMenuComponent, SignInComponent, RegisterUserComponent, DynamicFormComponent, DynamicFieldComponent],
+    PopupMenuComponent, SignInComponent, RegisterUserComponent, DynamicFormComponent, DynamicFieldComponent, 
+    PanelComponent],
   providers: [FrameworkConfigService, ScreenService, MenuService],
-  exports: [FrameworkBodyComponent, DynamicFormComponent]
+  exports: [FrameworkBodyComponent, DynamicFormComponent, PanelComponent, ScreenLarge, ScreenBelowLarge]
 })
 export class FwModule { }
